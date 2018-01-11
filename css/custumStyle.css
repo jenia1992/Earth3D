@@ -1,0 +1,38 @@
+body
+{
+    
+}
+.earth {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0 100px 0px #000 inset, 0 0 2px 2px #000;
+     animation:spin 15s linear alternate infinite;
+    background: url(https://web.opendrive.com/api/v1/download/file.json/NTlfMTQ1MTkzNDhf?inline=1);
+}
+@keyframes spin{
+    100%{background-position: 100%;}
+}
+.moon
+{
+    position: absolute;
+    top: 970px;
+    left: 1300px;
+    animation: linear 5s orb infinite;
+}
+@keyframes orb 
+{
+    0%{width: 120px;}
+    24%{z-index: 0;}
+    25%{top:300px; left 230px; z-index: 2;}
+    50%{width: 250px;}
+    74%{z-index: 2;}
+    75%{top: 300px;left: 0; z-index: 0;}
+    100%{width: 72px;}
+}
